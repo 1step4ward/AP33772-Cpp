@@ -465,3 +465,21 @@ void AP33772::printPDO()
     }
     Serial.println("===============================================");
 }
+
+/**
+ * @brief Get source PDO number
+ * @return source PDO number
+ */
+byte AP33772::getNumPDO()
+{
+    return numPDO;
+}
+
+/**
+ * @brief Get Pointer of PDO Data
+ * @return Pointer of PDO Data
+ */
+PDO_DATA_T* AP33772::getPdoData()
+{
+    return pdoData;
+}

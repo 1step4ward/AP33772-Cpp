@@ -175,6 +175,8 @@ public:
   void printPDO();
   void reset();
 
+  byte getNumPDO();
+  PDO_DATA_T* getPdoData();
 
 private:
   void i2c_read(byte slvAddr, byte cmdAddr, byte len);
